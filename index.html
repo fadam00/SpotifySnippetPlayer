@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	<script src="http://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+	<script src="app.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="container opaque">
+		<h1>Spotify Snippet Player</h1>
+			<h3>All your favorite songs...30 seconds at a time.</h3>
+	</div>
+	<div class="container opaque">
+		<form class="js-form">
+			<label for="js-song-search">Search for a song:</label>
+			<input type="text" class="js-song-search">
+			<button class="btn btn-md js-search-submit">Search</button>
+		</form>
+	</div>
+
+	<div class="widget">
+		<div class="header">
+			<div class="btn-play disabled"></div>
+
+				<div class="metadata">
+					<p class="js-title">Hunger of The Pine</p>
+					<p class="js-author">alt-J</p>
+						<div class="seekbar">
+		    		<progress class="progress" value="0" max="30"></progress>
+		  				</div>
+				</div>
+		</div>
+			<div class="cover">
+				<img class="js-album-image" src="https://i.scdn.co/image/04da6dfc1f5f45fdeba938a0cc71cf372524fd43">
+			</div>
+		<audio class="js-audio-player" src="https://p.scdn.co/mp3-preview/8e9c5ffdc38e91659bfe8b6bd44650dfc25a3d31"></audio>
+	</div>
+</body>
+</html>
